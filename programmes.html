@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Programmes — Commonwell</title>
+  <meta name="description" content="Six free Commonwell programmes — community gardens, youth clubs, skills training, movement, wellbeing and elder companionship — open to all, led by local people." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Antonio:wght@400;500;600;700&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="icon" type="image/png" sizes="180x180" href="assets/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/favicon.png" />
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav scrolled" id="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="brand" aria-label="Commonwell home">
+        <span class="brand__logo" role="img" aria-label="Commonwell"></span>
+      </a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="about.html">About</a>
+        <a href="programmes.html" class="active">Programmes</a>
+        <a href="events.html">Events</a>
+        <a href="partner.html">Partner</a>
+        <a href="faqs.html">FAQs</a>
+        <a href="voices.html">Voices</a>
+        <a href="ways-to-give.html">Ways to give</a>
+      </nav>
+      <div class="nav__actions">
+        <a href="index.html#involved" class="btn btn--ghost">Volunteer</a>
+        <a href="ways-to-give.html" class="btn btn--solid">Donate</a>
+      </div>
+      <button class="nav__burger" id="burger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============ PAGE HERO ============ -->
+  <section class="page-hero">
+    <div class="page-hero__bg" style="background-image:url('assets/img/prog-green.jpg')"></div>
+    <div class="page-hero__inner">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a> <span>/</span> Programmes</nav>
+      <h1 class="page-hero__title" data-split>Our Programmes</h1>
+      <p class="page-hero__lede">Six free programmes, open to all — no referral, no means test, no catch. Whatever you need, the gate is open.</p>
+    </div>
+  </section>
+
+  <!-- ============ PROGRAMMES ============ -->
+  <section class="programmes" id="programmes">
+    <div class="section-head">
+      <p class="eyebrow eyebrow--green">Our programmes</p>
+      <h2 class="h2" data-split>Six ways we help a neighbourhood thrive</h2>
+      <p class="section-head__sub">Each programme is free, open to all, and shaped by the people who use it. Here's what's growing right now.</p>
+    </div>
+
+    <div class="prog-rows">
+      <article class="prog-row" data-accent="green">
+        <div class="prog-row__intro">
+          <span class="prog-row__tag">Green spaces</span>
+          <h3>Community Gardens</h3>
+          <p class="prog-row__meta">Open to all ages · 31 sites · No experience needed</p>
+          <p>We turn neglected land into shared gardens where neighbours grow food, friendships and fresh air together.</p>
+        </div>
+        <div class="prog-row__img"><img src="assets/img/prog-green.jpg" alt="People planting in a community garden" /></div>
+        <div class="prog-row__how">
+          <h4>How it works</h4>
+          <ol>
+            <li>Drop in to your nearest garden — no booking, just turn up.</li>
+            <li>A volunteer host hands you tools and shows you the ropes.</li>
+            <li>Take home what you grow, and help shape the next planting.</li>
+          </ol>
+        </div>
+      </article>
+
+      <article class="prog-row" data-accent="yellow">
+        <div class="prog-row__intro">
+          <span class="prog-row__tag">Youth &amp; play</span>
+          <h3>Youth &amp; Play Clubs</h3>
+          <p class="prog-row__meta">Ages 5–16 · Term-time &amp; holidays · Free hot meal</p>
+          <p>Safe, free after-school and holiday clubs that keep young people active, curious and supported.</p>
+        </div>
+        <div class="prog-row__img"><img src="assets/img/prog-youth.jpg" alt="Children playing outdoors" /></div>
+        <div class="prog-row__how">
+          <h4>How it works</h4>
+          <ol>
+            <li>Register your child once — it takes about five minutes.</li>
+            <li>They join sport, crafts and trips with trained, DBS-checked staff.</li>
+            <li>Every session ends with a free hot meal before home time.</li>
+          </ol>
+        </div>
+      </article>
+
+      <article class="prog-row" data-accent="orange">
+        <div class="prog-row__intro">
+          <span class="prog-row__tag">Skills &amp; training</span>
+          <h3>Skills &amp; Training</h3>
+          <p class="prog-row__meta">Adults 16+ · Weekly · CV, digital &amp; trade skills</p>
+          <p>Free courses and mentoring that help people back into work, learning or confidence — at any age.</p>
+        </div>
+        <div class="prog-row__img"><img src="assets/img/prog-skills.jpg" alt="Adults in a learning workshop" /></div>
+        <div class="prog-row__how">
+          <h4>How it works</h4>
+          <ol>
+            <li>Tell us your goal — a job, a skill or just a fresh start.</li>
+            <li>We match you to a free course and a personal mentor.</li>
+            <li>Leave with a certificate, a CV and someone in your corner.</li>
+          </ol>
+        </div>
+      </article>
+
+      <article class="prog-row" data-accent="green">
+        <div class="prog-row__intro">
+          <span class="prog-row__tag">Active together</span>
+          <h3>Active Together</h3>
+          <p class="prog-row__meta">All abilities · Year-round · Just turn up</p>
+          <p>Free park runs, walking groups and team games that get the whole neighbourhood moving and connected.</p>
+        </div>
+        <div class="prog-row__img"><img src="assets/img/prog-active.jpg" alt="A group exercising in the park" /></div>
+        <div class="prog-row__how">
+          <h4>How it works</h4>
+          <ol>
+            <li>Pick a session — run, walk or play, whatever suits you.</li>
+            <li>Show up in comfy shoes; no kit and no fitness needed.</li>
+            <li>Stick around for a cuppa and a chat afterwards.</li>
+          </ol>
+        </div>
+      </article>
+
+      <article class="prog-row" data-accent="yellow">
+        <div class="prog-row__intro">
+          <span class="prog-row__tag">Mind &amp; body</span>
+          <h3>Mind &amp; Body</h3>
+          <p class="prog-row__meta">Adults · Weekly · No referral required</p>
+          <p>Drop-in wellbeing sessions — movement, breathing and a friendly ear — for anyone feeling the weight of it all.</p>
+        </div>
+        <div class="prog-row__img"><img src="assets/img/prog-mind.jpg" alt="A group doing yoga outdoors" /></div>
+        <div class="prog-row__how">
+          <h4>How it works</h4>
+          <ol>
+            <li>Come as you are — no referral, no forms, no cost.</li>
+            <li>Move, breathe and unwind in a gentle guided session.</li>
+            <li>Talk to a trained listener whenever you need one.</li>
+          </ol>
+        </div>
+      </article>
+
+      <article class="prog-row" data-accent="orange">
+        <div class="prog-row__intro">
+          <span class="prog-row__tag">Connection</span>
+          <h3>Connected Elders</h3>
+          <p class="prog-row__meta">Ages 65+ · Weekly visits · Free transport</p>
+          <p>Befriending visits, shared lunches and lifts to appointments that turn isolated days into looked-after ones.</p>
+        </div>
+        <div class="prog-row__img"><img src="assets/img/prog-elders.jpg" alt="Older friends laughing together" /></div>
+        <div class="prog-row__how">
+          <h4>How it works</h4>
+          <ol>
+            <li>Sign up — for yourself or someone you're worried about.</li>
+            <li>We match a friendly, background-checked companion.</li>
+            <li>Enjoy weekly visits, lunches and lifts to appointments.</li>
+          </ol>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ WHAT EVERY PROGRAMME SHARES ============ -->
+  <section class="page-section--tint">
+    <div class="page-section__wrap">
+      <div class="section-head">
+        <p class="eyebrow eyebrow--green">The common thread</p>
+        <h2 class="h2" data-split>What every programme shares</h2>
+        <p class="section-head__sub">However different they look, all six are built on the same three promises.</p>
+      </div>
+      <div class="cards">
+        <div class="card reveal">
+          <h3>Free, always</h3>
+          <p>Every session is free at the point of need — funded by donations, partners and grants, so cost is never the reason anyone misses out.</p>
+        </div>
+        <div class="card reveal">
+          <h3>Open to everyone</h3>
+          <p>No referral, no means test, no experience required. Whoever you are and whatever your week looks like, the gate is open.</p>
+        </div>
+        <div class="card reveal">
+          <h3>Led by local people</h3>
+          <p>Our programmes are run <em>with</em> the neighbourhood, not just for it — shaped, hosted and looked after by the people who use them.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA BAND ============ -->
+  <section class="cta-band">
+    <div class="cta-band__inner">
+      <h2 data-split>Find the programme for you</h2>
+      <p>Whether you want to take part, lend a hand or help keep a programme running, there's a place here with your name on it.</p>
+      <div class="cta-band__btns">
+        <a href="ways-to-give.html" class="btn btn--solid btn--lg">Donate</a>
+        <a href="index.html#involved" class="btn btn--ghost btn--lg">Volunteer</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <a href="index.html" class="brand brand--footer">
+          <span class="brand__logo" role="img" aria-label="Commonwell"></span>
+        </a>
+        <p class="footer__tag">Where community grows. A wellbeing charity run by, and for, the neighbourhoods we serve.</p>
+        <div class="footer__socials">
+          <a href="#" aria-label="Facebook">Facebook</a>
+          <a href="#" aria-label="Instagram">Instagram</a>
+          <a href="#" aria-label="YouTube">YouTube</a>
+        </div>
+      </div>
+      <nav class="footer__col" aria-label="Explore">
+        <h4>Explore</h4>
+        <a href="about.html">About us</a>
+        <a href="programmes.html">Programmes</a>
+        <a href="events.html">Host an event</a>
+        <a href="partner.html">Partner with us</a>
+        <a href="voices.html">Voices</a>
+      </nav>
+      <nav class="footer__col" aria-label="Support">
+        <h4>Support</h4>
+        <a href="ways-to-give.html">Donate</a>
+        <a href="index.html#involved">Volunteer</a>
+        <a href="ways-to-give.html">Gift Aid</a>
+        <a href="faqs.html">FAQs</a>
+      </nav>
+    </div>
+    <div class="footer__bottom">
+      <p>© <span id="year">2026</span> Commonwell. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

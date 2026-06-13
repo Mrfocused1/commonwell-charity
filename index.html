@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Commonwell — Where community grows</title>
+  <meta name="description" content="Commonwell is a community wellbeing charity. We grow green spaces, support young people and elders, and bring neighbours together. Donate or get involved today." />
+
+  <!-- Fonts: Anton (display) · Antonio (sub-display) · DM Sans (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Antonio:wght@400;500;600;700&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet" />
+
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="icon" type="image/png" sizes="180x180" href="assets/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/favicon.png" />
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#top" class="brand" aria-label="Commonwell home">
+        <span class="brand__logo" role="img" aria-label="Commonwell"></span>
+      </a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a href="about.html">About</a>
+        <a href="programmes.html">Programmes</a>
+        <a href="events.html">Events</a>
+        <a href="partner.html">Partner</a>
+        <a href="faqs.html">FAQs</a>
+        <a href="voices.html">Voices</a>
+        <a href="ways-to-give.html">Ways to give</a>
+      </nav>
+
+      <div class="nav__actions">
+        <a href="#involved" class="btn btn--ghost">Volunteer</a>
+        <a href="ways-to-give.html" class="btn btn--solid">Donate</a>
+      </div>
+
+      <button class="nav__burger" id="burger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="top">
+    <div class="hero__media">
+      <video class="hero__video" autoplay muted loop playsinline poster="assets/img/hero-poster.jpg">
+        <source src="assets/video/hero.mp4" type="video/mp4" />
+      </video>
+      <div class="hero__scrim"></div>
+    </div>
+
+    <div class="hero__content">
+      <p class="hero__eyebrow">Community wellbeing charity · est. since the neighbourhood</p>
+      <h1 class="hero__title" data-split>Where community grows</h1>
+      <p class="hero__lede">We turn unloved corners into thriving green spaces, and lonely days into shared ones — so every neighbour has somewhere to belong.</p>
+      <div class="hero__cta">
+        <a href="#give" class="btn btn--solid btn--lg">Donate today</a>
+        <a href="#involved" class="btn btn--ghost btn--lg btn--ghost-light">Volunteer</a>
+      </div>
+    </div>
+
+    <!-- impact strip (was: opening hours) -->
+    <div class="hero__strip">
+      <div class="strip__item"><span class="strip__num" data-count="24">0</span><span class="strip__label">neighbourhoods served</span></div>
+      <div class="strip__item"><span class="strip__num" data-count="8600">0</span><span class="strip__label">people reached a year</span></div>
+      <div class="strip__item"><span class="strip__num" data-count="31">0</span><span class="strip__label">green spaces grown</span></div>
+      <div class="strip__item"><span class="strip__num" data-count="540">0</span><span class="strip__label">active volunteers</span></div>
+    </div>
+
+    <a href="#about" class="hero__scrollcue" aria-label="Scroll down">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- blob divider -->
+  <div class="blob-divider" aria-hidden="true">
+    <svg viewBox="0 0 1440 120" preserveAspectRatio="none"><path d="M0,40 C240,120 480,0 720,40 C960,80 1200,120 1440,50 L1440,120 L0,120 Z" fill="#f5f5ef"/></svg>
+  </div>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="about" id="about">
+    <div class="about__grid">
+      <div class="about__media reveal">
+        <div class="blobshape">
+          <img src="assets/img/about.jpg" alt="Volunteers from the neighbourhood smiling together" />
+        </div>
+        <div class="about__badge"><span>15</span>years rooted in the community</div>
+      </div>
+
+      <div class="about__text">
+        <p class="eyebrow eyebrow--green">About Commonwell</p>
+        <h2 class="h2" data-split>A charity that grows from the ground up</h2>
+        <p>Commonwell began with one overgrown plot and a handful of neighbours who refused to let it go to waste. Today we run wellbeing programmes across two dozen neighbourhoods — from community gardens and youth clubs to elder companionship and free movement classes in the park.</p>
+        <p>We believe wellbeing isn't a luxury. It's what happens when people have a green place to gather, a skill to learn, a reason to leave the house, and someone who notices when they don't. Everything we do is free at the point of need, run with the people we serve — not just for them.</p>
+        <ul class="ticks">
+          <li>Free at the point of need, always</li>
+          <li>Led by local people, in local places</li>
+          <li>Every £1 stretched as far as it will go</li>
+        </ul>
+        <a href="#programmes" class="link-arrow">See what we do <span>→</span></a>
+      </div>
+    </div>
+    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cg fill='none' stroke='%2371a34f' stroke-width='2' opacity='.5'%3E%3Ccircle cx='60' cy='60' r='8'/%3E%3Ccircle cx='20' cy='20' r='5'/%3E%3Ccircle cx='100' cy='30' r='5'/%3E%3Ccircle cx='30' cy='100' r='5'/%3E%3Ccircle cx='100' cy='100' r='5'/%3E%3C/g%3E%3C/svg%3E" class="deco deco--about" alt="" aria-hidden="true" />
+  </section>
+
+  <!-- ============ PROGRAMMES ============ -->
+  <section class="programmes" id="programmes">
+    <div class="section-head">
+      <p class="eyebrow eyebrow--green">Our programmes</p>
+      <h2 class="h2" data-split>Six ways we help a neighbourhood thrive</h2>
+      <p class="section-head__sub">Each programme is free, open to all, and shaped by the people who use it. Here's what's growing right now.</p>
+    </div>
+
+    <div class="prog-rows">
+      <article class="prog-row" data-accent="green">
+        <div class="prog-row__intro">
+          <span class="prog-row__tag">Green spaces</span>
+          <h3>Community Gardens</h3>
+          <p class="prog-row__meta">Open to all ages · 31 sites · No experience needed</p>
+          <p>We turn neglected land into shared gardens where neighbours grow food, friendships and fresh air together.</p>
+        </div>
+        <div class="prog-row__img"><img src="assets/img/prog-green.jpg" alt="People planting in a community garden" /></div>
+        <div class="prog-row__how">
+          <h4>How it works</h4>
+          <ol>
+            <li>Drop in to your nearest garden — no booking, just turn up.</li>
+            <li>A volunteer host hands you tools and shows you the ropes.</li>
+            <li>Take home what you grow, and help shape the next planting.</li>
+          </ol>
+        </div>
+      </article>
+
+      <article class="prog-row" data-accent="yellow">
+        <div class="prog-row__intro">
+          <span class="prog-row__tag">Youth &amp; play</span>
+          <h3>Youth &amp; Play Clubs</h3>
+          <p class="prog-row__meta">Ages 5–16 · Term-time &amp; holidays · Free hot meal</p>
+          <p>Safe, free after-school and holiday clubs that keep young people active, curious and supported.</p>
+        </div>
+        <div class="prog-row__img"><img src="assets/img/prog-youth.jpg" alt="Children playing outdoors" /></div>
+        <div class="prog-row__how">
+          <h4>How it works</h4>
+          <ol>
+            <li>Register your child once — it takes about five minutes.</li>
+            <li>They join sport, crafts and trips with trained, DBS-checked staff.</li>
+            <li>Every session ends with a free hot meal before home time.</li>
+          </ol>
+        </div>
+      </article>
+
+      <article class="prog-row" data-accent="orange">
+        <div class="prog-row__intro">
+          <span class="prog-row__tag">Skills &amp; training</span>
+          <h3>Skills &amp; Training</h3>
+          <p class="prog-row__meta">Adults 16+ · Weekly · CV, digital &amp; trade skills</p>
+          <p>Free courses and mentoring that help people back into work, learning or confidence — at any age.</p>
+        </div>
+        <div class="prog-row__img"><img src="assets/img/prog-skills.jpg" alt="Adults in a learning workshop" /></div>
+        <div class="prog-row__how">
+          <h4>How it works</h4>
+          <ol>
+            <li>Tell us your goal — a job, a skill or just a fresh start.</li>
+            <li>We match you to a free course and a personal mentor.</li>
+            <li>Leave with a certificate, a CV and someone in your corner.</li>
+          </ol>
+        </div>
+      </article>
+
+      <article class="prog-row" data-accent="green">
+        <div class="prog-row__intro">
+          <span class="prog-row__tag">Active together</span>
+          <h3>Active Together</h3>
+          <p class="prog-row__meta">All abilities · Year-round · Just turn up</p>
+          <p>Free park runs, walking groups and team games that get the whole neighbourhood moving and connected.</p>
+        </div>
+        <div class="prog-row__img"><img src="assets/img/prog-active.jpg" alt="A group exercising in the park" /></div>
+        <div class="prog-row__how">
+          <h4>How it works</h4>
+          <ol>
+            <li>Pick a session — run, walk or play, whatever suits you.</li>
+            <li>Show up in comfy shoes; no kit and no fitness needed.</li>
+            <li>Stick around for a cuppa and a chat afterwards.</li>
+          </ol>
+        </div>
+      </article>
+
+      <article class="prog-row" data-accent="yellow">
+        <div class="prog-row__intro">
+          <span class="prog-row__tag">Mind &amp; body</span>
+          <h3>Mind &amp; Body</h3>
+          <p class="prog-row__meta">Adults · Weekly · No referral required</p>
+          <p>Drop-in wellbeing sessions — movement, breathing and a friendly ear — for anyone feeling the weight of it all.</p>
+        </div>
+        <div class="prog-row__img"><img src="assets/img/prog-mind.jpg" alt="A group doing yoga outdoors" /></div>
+        <div class="prog-row__how">
+          <h4>How it works</h4>
+          <ol>
+            <li>Come as you are — no referral, no forms, no cost.</li>
+            <li>Move, breathe and unwind in a gentle guided session.</li>
+            <li>Talk to a trained listener whenever you need one.</li>
+          </ol>
+        </div>
+      </article>
+
+      <article class="prog-row" data-accent="orange">
+        <div class="prog-row__intro">
+          <span class="prog-row__tag">Connection</span>
+          <h3>Connected Elders</h3>
+          <p class="prog-row__meta">Ages 65+ · Weekly visits · Free transport</p>
+          <p>Befriending visits, shared lunches and lifts to appointments that turn isolated days into looked-after ones.</p>
+        </div>
+        <div class="prog-row__img"><img src="assets/img/prog-elders.jpg" alt="Older friends laughing together" /></div>
+        <div class="prog-row__how">
+          <h4>How it works</h4>
+          <ol>
+            <li>Sign up — for yourself or someone you're worried about.</li>
+            <li>We match a friendly, background-checked companion.</li>
+            <li>Enjoy weekly visits, lunches and lifts to appointments.</li>
+          </ol>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ HOST AN EVENT (was: birthdays) ============ -->
+  <section class="events" id="events">
+    <div class="events__grid">
+      <div class="events__text">
+        <p class="eyebrow eyebrow--cream">Host an event</p>
+        <h2 class="h2 h2--light" data-split>Celebrate with us — and give back at the same time</h2>
+        <p>Birthday, anniversary, work do or street party — host it at one of our community gardens and every penny stays in the neighbourhood. We'll handle the space, you bring the people.</p>
+        <ul class="events__list">
+          <li><strong>The space</strong> — garden, covered terrace or community hall, yours for the afternoon.</li>
+          <li><strong>The setup</strong> — tables, chairs, fridge and a covered area if the weather turns.</li>
+          <li><strong>The cause</strong> — your suggested donation funds a child's place at our holiday club.</li>
+          <li><strong>The help</strong> — a friendly volunteer host on hand from start to finish.</li>
+        </ul>
+        <div class="events__cta">
+          <a href="#involved" class="btn btn--solid">Enquire about a date</a>
+          <span class="events__from">Suggested donation from £80</span>
+        </div>
+      </div>
+      <div class="events__media reveal">
+        <video autoplay muted loop playsinline poster="assets/img/event.jpg">
+          <source src="assets/video/events.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PARTNER (was: group events) ============ -->
+  <section class="partner" id="partner">
+    <div class="section-head">
+      <p class="eyebrow eyebrow--green">Partner with us</p>
+      <h2 class="h2" data-split>Schools and businesses make this possible</h2>
+      <p class="section-head__sub">Bring your students or your team into the community — and help us reach further.</p>
+    </div>
+
+    <div class="partner__grid">
+      <article class="partner__card reveal" style="--accent:#71a34f">
+        <div class="partner__img"><img src="assets/img/prog-youth.jpg" alt="Young people taking part" /></div>
+        <div class="partner__body">
+          <span class="partner__kicker">For schools</span>
+          <h3>Outdoor learning days</h3>
+          <p>Half- and full-day programmes that take the classroom into the garden — growing, cooking, building and looking after a living space. Curriculum-linked and fully supervised.</p>
+          <ul class="ticks ticks--sm">
+            <li>Half day, full day or termly</li>
+            <li>All abilities and SEND welcome</li>
+            <li>Free for schools in our priority areas</li>
+          </ul>
+          <a href="#involved" class="link-arrow link-arrow--green">Book a school day <span>→</span></a>
+        </div>
+      </article>
+
+      <article class="partner__card reveal" style="--accent:#7b4fb0">
+        <div class="partner__img"><img src="assets/img/partner.jpg" alt="A corporate team volunteering" /></div>
+        <div class="partner__body">
+          <span class="partner__kicker">For businesses</span>
+          <h3>Team volunteering days</h3>
+          <p>Swap the away-day for a day that matters. Your team spends it building, planting and decorating alongside the people we serve — and your support keeps a programme running all year.</p>
+          <ul class="ticks ticks--sm">
+            <li>Teams of 6–40</li>
+            <li>Real, hands-on impact in a day</li>
+            <li>Corporate partnership packages</li>
+          </ul>
+          <a href="#involved" class="link-arrow link-arrow--orange">Plan a team day <span>→</span></a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ FAQs ============ -->
+  <section class="faqs" id="faqs">
+    <div class="faqs__inner">
+      <div class="faqs__head">
+        <p class="eyebrow eyebrow--green">Good to know</p>
+        <h2 class="h2" data-split>Questions, answered</h2>
+        <p>Can't see yours? <a href="#involved">Drop us a line</a> — a real person will reply.</p>
+      </div>
+
+      <div class="accordion">
+        <div class="acc-item">
+          <button class="acc-q" aria-expanded="false">Where does my donation actually go?<span class="acc-icon"></span></button>
+          <div class="acc-a"><p>Straight into programmes. For every £1 you give, 88p goes directly to running gardens, clubs and visits in the neighbourhood; the rest keeps the lights on and the safeguarding watertight. We publish a full breakdown in our annual report.</p></div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-q" aria-expanded="false">How do I volunteer?<span class="acc-icon"></span></button>
+          <div class="acc-a"><p>Fill in the <a href="#involved">Get involved</a> form below and tell us what you'd enjoy. We'll match you to a programme near you, run a quick welcome session, and sort your DBS check if your role needs one. You can give as little as two hours a month.</p></div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-q" aria-expanded="false">Are your programmes really free?<span class="acc-icon"></span></button>
+          <div class="acc-a"><p>Yes — every programme is free at the point of need. No referral, no means test, no catch. They're funded entirely by donations, partnerships and grants, which is exactly why your support matters.</p></div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-q" aria-expanded="false">Do I need any experience to take part?<span class="acc-icon"></span></button>
+          <div class="acc-a"><p>None at all. Whether you're picking up a trowel for the first time or joining a walking group, our volunteer hosts will show you the ropes. Everyone's welcome, exactly as they are.</p></div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-q" aria-expanded="false">Can my company partner with you?<span class="acc-icon"></span></button>
+          <div class="acc-a"><p>Absolutely. From a one-off team volunteering day to a year-long partnership that funds a whole programme, we'll build something that fits. See <a href="#partner">Partner with us</a> or use the form to start a conversation.</p></div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-q" aria-expanded="false">Is Commonwell a registered charity?<span class="acc-icon"></span></button>
+          <div class="acc-a"><p>We are. Commonwell is a registered charity governed by a board of local trustees, with full safeguarding, insurance and DBS procedures in place across every programme.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ VOICES (testimonials) ============ -->
+  <section class="voices" id="voices">
+    <div class="section-head section-head--light">
+      <p class="eyebrow eyebrow--cream">Voices</p>
+      <h2 class="h2 h2--light" data-split>The neighbourhood, in its own words</h2>
+    </div>
+
+    <div class="swiper voices-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <figure class="voice">
+            <blockquote>After I lost my husband the house went very quiet. The Tuesday lunch club gave me a reason to get dressed in the morning. Now I'm the one who saves a seat for the new faces.</blockquote>
+            <figcaption>
+              <img src="assets/img/voice-1.jpg" alt="" />
+              <span><strong>Marcia, 71</strong>Connected Elders</span>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="swiper-slide">
+          <figure class="voice">
+            <blockquote>My son was climbing the walls over the summer. The holiday club fed him, ran him ragged and brought him home happy every day. As a single dad on shifts, it was a lifeline.</blockquote>
+            <figcaption>
+              <img src="assets/img/voice-2.jpg" alt="" />
+              <span><strong>Dele, 38</strong>Youth &amp; Play parent</span>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="swiper-slide">
+          <figure class="voice">
+            <blockquote>I came to the garden for the veg and stayed for the people. Six months later I'd done a course, found part-time work and made the best friends I've had in years.</blockquote>
+            <figcaption>
+              <img src="assets/img/voice-3.jpg" alt="" />
+              <span><strong>Hannah, 29</strong>Community Gardens</span>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="swiper-slide">
+          <figure class="voice">
+            <blockquote>We brought our whole team for a volunteering day and built the new raised beds. Best thing we've done together as a company — half of us have been back on weekends since.</blockquote>
+            <figcaption>
+              <img src="assets/img/voice-4.jpg" alt="" />
+              <span><strong>Tom, 45</strong>Corporate partner</span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="voices-pagination"></div>
+    </div>
+  </section>
+
+  <!-- ============ WAYS TO GIVE (was: pricing) ============ -->
+  <section class="give" id="give">
+    <div class="section-head">
+      <p class="eyebrow eyebrow--green">Ways to give</p>
+      <h2 class="h2" data-split>Choose what your gift becomes</h2>
+      <p class="section-head__sub">Give once or monthly — and see exactly what your kindness pays for.</p>
+    </div>
+
+    <div class="give__toggle" id="giveToggle">
+      <button class="is-active" data-mode="month">Monthly</button>
+      <button data-mode="once">One-off</button>
+    </div>
+
+    <div class="give-grid">
+      <article class="give-card reveal">
+        <div class="give-card__amt"><span class="give-card__cur">£</span>10<span class="give-card__per" data-per>/month</span></div>
+        <h3>Seeds</h3>
+        <p>Plants and tools for a family's first season in the community garden.</p>
+        <a href="#involved" class="btn btn--ghost btn--block">Give £10</a>
+      </article>
+
+      <article class="give-card give-card--featured reveal">
+        <div class="give-card__flag">Most popular</div>
+        <div class="give-card__amt"><span class="give-card__cur">£</span>25<span class="give-card__per" data-per>/month</span></div>
+        <h3>Roots</h3>
+        <p>A child's place at holiday club for a week — hot meals, activities and a safe place to play.</p>
+        <a href="#involved" class="btn btn--solid btn--block">Give £25</a>
+      </article>
+
+      <article class="give-card reveal">
+        <div class="give-card__amt"><span class="give-card__cur">£</span>50<span class="give-card__per" data-per>/month</span></div>
+        <h3>Branches</h3>
+        <p>A month of befriending visits and warm lunches for an isolated older neighbour.</p>
+        <a href="#involved" class="btn btn--ghost btn--block">Give £50</a>
+      </article>
+
+      <article class="give-card reveal">
+        <div class="give-card__amt"><span class="give-card__cur">£</span>100<span class="give-card__per" data-per>/month</span></div>
+        <h3>Canopy</h3>
+        <p>Keeps a weekly wellbeing session running for the whole neighbourhood.</p>
+        <a href="#involved" class="btn btn--ghost btn--block">Give £100</a>
+      </article>
+    </div>
+    <p class="give__note">UK taxpayer? Adding Gift Aid makes your donation worth 25% more, at no cost to you.</p>
+  </section>
+
+  <!-- ============ GET INVOLVED (was: booking form) ============ -->
+  <section class="involved" id="involved">
+    <div class="involved__bg" style="background-image:url('assets/img/cta.jpg')"></div>
+    <div class="involved__panel reveal">
+      <div class="involved__intro">
+        <p class="eyebrow eyebrow--green">Get involved</p>
+        <h2 class="h2" data-split>Lend a hand, a skill or a Saturday</h2>
+        <p>Tell us a little about you and what you'd enjoy. Whether it's volunteering, partnering or just finding out more, a real person will be in touch within two working days.</p>
+        <ul class="ticks">
+          <li>Volunteer as little as two hours a month</li>
+          <li>No experience needed — we'll train you</li>
+          <li>Partner your school or business</li>
+        </ul>
+      </div>
+
+      <form class="involved__form" id="involvedForm" novalidate>
+        <div class="field">
+          <label for="iname">Your name</label>
+          <input type="text" id="iname" name="name" placeholder="Jordan Smith" required />
+        </div>
+        <div class="field field--row">
+          <div>
+            <label for="iemail">Email</label>
+            <input type="email" id="iemail" name="email" placeholder="you@email.com" required />
+          </div>
+          <div>
+            <label for="iphone">Phone <span class="opt">(optional)</span></label>
+            <input type="tel" id="iphone" name="phone" placeholder="07…" />
+          </div>
+        </div>
+        <div class="field">
+          <label for="itype">I'd like to…</label>
+          <select id="itype" name="type" required>
+            <option value="" disabled selected>Choose one</option>
+            <option>Volunteer</option>
+            <option>Make a regular donation</option>
+            <option>Host an event</option>
+            <option>Partner my school</option>
+            <option>Partner my business</option>
+            <option>Just find out more</option>
+          </select>
+        </div>
+        <div class="field field--row">
+          <div>
+            <label for="iarea">Nearest neighbourhood <span class="opt">(optional)</span></label>
+            <input type="text" id="iarea" name="area" placeholder="e.g. Riverside" />
+          </div>
+          <div>
+            <label for="iavail">Availability <span class="opt">(optional)</span></label>
+            <select id="iavail" name="availability">
+              <option value="" disabled selected>When suits you?</option>
+              <option>Weekday mornings</option>
+              <option>Weekday afternoons</option>
+              <option>Evenings</option>
+              <option>Weekends</option>
+              <option>Flexible</option>
+            </select>
+          </div>
+        </div>
+        <div class="field">
+          <label for="imsg">Anything else? <span class="opt">(optional)</span></label>
+          <textarea id="imsg" name="message" rows="3" placeholder="Tell us what you'd love to get stuck into…"></textarea>
+        </div>
+        <button type="submit" class="btn btn--solid btn--lg btn--block">Send it over</button>
+        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <a href="#top" class="brand brand--footer">
+          <span class="brand__logo" role="img" aria-label="Commonwell"></span>
+        </a>
+        <p class="footer__tag">Where community grows. A wellbeing charity run by, and for, the neighbourhoods we serve.</p>
+        <div class="footer__socials">
+          <a href="#" aria-label="Facebook">Facebook</a>
+          <a href="#" aria-label="Instagram">Instagram</a>
+          <a href="#" aria-label="YouTube">YouTube</a>
+        </div>
+      </div>
+
+      <nav class="footer__col" aria-label="Explore">
+        <h4>Explore</h4>
+        <a href="about.html">About us</a>
+        <a href="programmes.html">Programmes</a>
+        <a href="events.html">Host an event</a>
+        <a href="partner.html">Partner with us</a>
+        <a href="voices.html">Voices</a>
+      </nav>
+
+      <nav class="footer__col" aria-label="Support">
+        <h4>Support</h4>
+        <a href="ways-to-give.html">Donate</a>
+        <a href="index.html#involved">Volunteer</a>
+        <a href="ways-to-give.html">Gift Aid</a>
+        <a href="faqs.html">FAQs</a>
+      </nav>
+
+    </div>
+
+    <div class="footer__bottom">
+      <p>© <span id="year">2026</span> Commonwell. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

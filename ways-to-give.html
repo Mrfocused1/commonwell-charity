@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ways to Give — Commonwell</title>
+  <meta name="description" content="Give once or monthly to Commonwell and see exactly what your kindness pays for — plus Gift Aid, fundraising, payroll giving and gifts in wills." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Antonio:wght@400;500;600;700&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="icon" type="image/png" sizes="180x180" href="assets/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/favicon.png" />
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav scrolled" id="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="brand" aria-label="Commonwell home">
+        <span class="brand__logo" role="img" aria-label="Commonwell"></span>
+      </a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="about.html">About</a>
+        <a href="programmes.html">Programmes</a>
+        <a href="events.html">Events</a>
+        <a href="partner.html">Partner</a>
+        <a href="faqs.html">FAQs</a>
+        <a href="voices.html">Voices</a>
+        <a href="ways-to-give.html" class="active">Ways to give</a>
+      </nav>
+      <div class="nav__actions">
+        <a href="index.html#involved" class="btn btn--ghost">Volunteer</a>
+        <a href="ways-to-give.html" class="btn btn--solid">Donate</a>
+      </div>
+      <button class="nav__burger" id="burger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============ PAGE HERO ============ -->
+  <section class="page-hero">
+    <div class="page-hero__bg" style="background-image:url('assets/img/give.jpg')"></div>
+    <div class="page-hero__inner">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a> <span>/</span> Ways to give</nav>
+      <h1 class="page-hero__title" data-split>Ways to Give</h1>
+      <p class="page-hero__lede">Give once or monthly, and see exactly what your kindness pays for — every gift puts down roots in a real neighbourhood.</p>
+    </div>
+  </section>
+
+  <!-- ============ WAYS TO GIVE (tiers + toggle) ============ -->
+  <section class="give" id="give">
+    <div class="section-head">
+      <p class="eyebrow eyebrow--green">Ways to give</p>
+      <h2 class="h2" data-split>Choose what your gift becomes</h2>
+      <p class="section-head__sub">Give once or monthly — and see exactly what your kindness pays for.</p>
+    </div>
+
+    <div class="give__toggle" id="giveToggle">
+      <button class="is-active" data-mode="month">Monthly</button>
+      <button data-mode="once">One-off</button>
+    </div>
+
+    <div class="give-grid">
+      <article class="give-card reveal">
+        <div class="give-card__amt"><span class="give-card__cur">£</span>10<span class="give-card__per" data-per>/month</span></div>
+        <h3>Seeds</h3>
+        <p>Plants and tools for a family's first season in the community garden.</p>
+        <a href="#involved" class="btn btn--ghost btn--block">Give £10</a>
+      </article>
+
+      <article class="give-card give-card--featured reveal">
+        <div class="give-card__flag">Most popular</div>
+        <div class="give-card__amt"><span class="give-card__cur">£</span>25<span class="give-card__per" data-per>/month</span></div>
+        <h3>Roots</h3>
+        <p>A child's place at holiday club for a week — hot meals, activities and a safe place to play.</p>
+        <a href="#involved" class="btn btn--solid btn--block">Give £25</a>
+      </article>
+
+      <article class="give-card reveal">
+        <div class="give-card__amt"><span class="give-card__cur">£</span>50<span class="give-card__per" data-per>/month</span></div>
+        <h3>Branches</h3>
+        <p>A month of befriending visits and warm lunches for an isolated older neighbour.</p>
+        <a href="#involved" class="btn btn--ghost btn--block">Give £50</a>
+      </article>
+
+      <article class="give-card reveal">
+        <div class="give-card__amt"><span class="give-card__cur">£</span>100<span class="give-card__per" data-per>/month</span></div>
+        <h3>Canopy</h3>
+        <p>Keeps a weekly wellbeing session running for the whole neighbourhood.</p>
+        <a href="#involved" class="btn btn--ghost btn--block">Give £100</a>
+      </article>
+    </div>
+    <p class="give__note">UK taxpayer? Adding Gift Aid makes your donation worth 25% more, at no cost to you.</p>
+  </section>
+
+  <!-- ============ OTHER WAYS TO GIVE ============ -->
+  <section class="page-section--tint">
+    <div class="page-section__wrap">
+      <div class="section-head">
+        <p class="eyebrow eyebrow--green">More than a one-off</p>
+        <h2 class="h2" data-split>Other ways to give</h2>
+        <p class="section-head__sub">There's more than one way to make a difference. Pick whatever fits your life.</p>
+      </div>
+      <div class="cards">
+        <div class="card reveal">
+          <h3>Gift Aid</h3>
+          <p>If you're a UK taxpayer, ticking Gift Aid adds 25% to every donation at no extra cost to you — turning your £10 into £12.50 for the neighbourhood.</p>
+        </div>
+        <div class="card reveal">
+          <h3>Fundraise for us</h3>
+          <p>Run, bake, walk or shave it off — set up a fundraising page for your big idea and rally your friends behind a programme close to home.</p>
+        </div>
+        <div class="card reveal">
+          <h3>Payroll giving</h3>
+          <p>Give straight from your pay before tax, so a little more reaches us for less. Ask your employer about Give As You Earn and we'll do the rest.</p>
+        </div>
+        <div class="card reveal">
+          <h3>A gift in your will</h3>
+          <p>Once your loved ones are looked after, a gift in your will keeps gardens growing and neighbours connected for the generations who follow.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WHERE YOUR MONEY GOES ============ -->
+  <section class="page-section">
+    <div class="feature">
+      <div class="feature__media reveal"><img src="assets/img/give.jpg" alt="A community garden flourishing thanks to donations" /></div>
+      <div class="feature__body">
+        <p class="eyebrow eyebrow--green">Where your money goes</p>
+        <h2 class="h2" data-split>Every pound, put to work</h2>
+        <p class="lead">We're a small charity that's careful with what you give and open about where it goes. Your gift doesn't disappear into overheads — it lands in a garden, a club or a kitchen near someone who needs it.</p>
+        <ul class="ticks">
+          <li>88p in every £1 goes straight to programmes</li>
+          <li>Independently examined accounts</li>
+          <li>Full breakdown in our annual report</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA BAND ============ -->
+  <section class="cta-band">
+    <div class="cta-band__inner">
+      <h2 data-split>Your gift grows here</h2>
+      <p>Whatever you can give, it puts down roots in a real neighbourhood — a meal, a friendship, a green place to gather. Thank you for growing this with us.</p>
+      <div class="cta-band__btns">
+        <a href="index.html#involved" class="btn btn--solid btn--lg">Donate £25</a>
+        <a href="index.html#involved" class="btn btn--ghost btn--lg">Become a volunteer</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <a href="index.html" class="brand brand--footer">
+          <span class="brand__logo" role="img" aria-label="Commonwell"></span>
+        </a>
+        <p class="footer__tag">Where community grows. A wellbeing charity run by, and for, the neighbourhoods we serve.</p>
+        <div class="footer__socials">
+          <a href="#" aria-label="Facebook">Facebook</a>
+          <a href="#" aria-label="Instagram">Instagram</a>
+          <a href="#" aria-label="YouTube">YouTube</a>
+        </div>
+      </div>
+      <nav class="footer__col" aria-label="Explore">
+        <h4>Explore</h4>
+        <a href="about.html">About us</a>
+        <a href="programmes.html">Programmes</a>
+        <a href="events.html">Host an event</a>
+        <a href="partner.html">Partner with us</a>
+        <a href="voices.html">Voices</a>
+      </nav>
+      <nav class="footer__col" aria-label="Support">
+        <h4>Support</h4>
+        <a href="ways-to-give.html">Donate</a>
+        <a href="index.html#involved">Volunteer</a>
+        <a href="ways-to-give.html">Gift Aid</a>
+        <a href="faqs.html">FAQs</a>
+      </nav>
+    </div>
+    <div class="footer__bottom">
+      <p>© <span id="year">2026</span> Commonwell. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
